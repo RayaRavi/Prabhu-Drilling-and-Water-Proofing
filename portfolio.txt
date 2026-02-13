@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prabhu Drilling & Water Proofing </title>
+  <meta name="description" content="Prabhu Drilling & Water Proofing — Grouting, Waterproofing, Rod Anchoring, Wall Crack Repair, Chipping Work. 25+ years experience." />
+
+  <!--
+    Excerpt from the uploaded portfolio:
+    Prabhu Drilling & Water Proofing — Precision Drilling • Expert Waterproofing • 25+ Years
+    R. Srinivas Rao — 9666066871
+  -->
+
+  <style>
+    :root{
+      --navy:#071428;
+      --deep:#0b2a3a;
+      --gold:#d4a24a;
+      --accent:#0fb5a6;
+      --muted:#6b7b86;
+      --card:#ffffff;
+      --glass: rgba(255,255,255,0.06);
+      --radius:12px;
+      --max-width:1200px;
+      --accent-dark:#0a8f7f;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      color:#0f1720;
+      background:linear-gradient(180deg,#f7fbfc 0%, #eef6f8 100%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      -webkit-font-feature-settings: "liga" 1;
+    }
+    .wrap{max-width:var(--max-width);margin:0 auto;padding:28px}
+
+    /* Header */
+    header.site-header{
+      background:linear-gradient(90deg,var(--navy), #0b3b4a);
+      color:#fff;
+      position:sticky;top:0;z-index:1200;
+      box-shadow:0 6px 18px rgba(3,10,18,0.25);
+    }
+    .site-header .wrap{
+      display:flex;align-items:center;justify-content:space-between;padding:14px 28px;
+    }
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{
+      width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#f7c97b);
+      display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--navy);
+      box-shadow:0 6px 18px rgba(0,0,0,0.18);font-size:18px;
+    }
+    .brand h1{font-size:20px;margin:0;letter-spacing:0.2px}
+    .brand p{margin:0;font-size:12px;color:rgba(255,255,255,0.85)}
+
+    /* Header controls container */
+    .header-controls{display:flex;align-items:center;gap:12px;position:relative}
+    .translate-slot{position:relative;width:170px;height:40px}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;justify-content:center;
+      background:var(--gold);color:var(--navy);border:none;padding:10px 14px;border-radius:8px;
+      font-weight:700;cursor:pointer;box-shadow:0 6px 14px rgba(212,162,74,0.18);
+      height:40px;min-width:120px;
+    }
+    .btn.secondary{background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.12)}
+    .btn.icon{display:inline-flex;gap:8px;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.06);color:#fff;border:none}
+    .btn.hidden{display:none}
+
+    /* Hero */
+    .hero{
+      margin-top:28px;border-radius:18px;overflow:hidden;
+      background:
+        linear-gradient(180deg, rgba(7,20,40,0.6), rgba(7,20,40,0.6)),
+        url('images/hero-bg.jpg') center/cover no-repeat;
+      color:#fff;padding:64px 28px;
+      box-shadow:0 12px 40px rgba(3,10,18,0.12);
+    }
+    .hero .wrap{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+    .hero-left{flex:1;min-width:300px}
+    .hero h2{font-size:34px;margin:0 0 12px 0;line-height:1.05}
+    .hero p.lead{margin:0 0 18px 0;color:rgba(255,255,255,0.95);font-size:16px}
+    .cta-row{display:flex;gap:12px;align-items:center}
+    .cta-primary{background:var(--accent);color:#fff;padding:12px 18px;border-radius:10px;font-weight:700;border:none;cursor:pointer}
+    .cta-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.12);padding:10px 16px;border-radius:10px;cursor:pointer}
+
+    .hero-right{width:420px;min-width:260px}
+    .hero-card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      padding:18px;border-radius:12px;color:#fff;backdrop-filter: blur(6px);
+      box-shadow:0 8px 30px rgba(3,10,18,0.18);
+    }
+    .hero-card h4{margin:0 0 8px 0;font-size:14px;color:#f7e6d0}
+    .hero-card p{margin:0;font-size:14px;color:#fff}
+
+    /* Sections */
+    section{padding:56px 0}
+    section .wrap{padding:0 12px}
+    h2.section-title{font-size:26px;color:var(--deep);margin-bottom:18px}
+    p.section-sub{color:var(--muted);max-width:900px;margin:0 auto 28px auto}
+
+    /* Services grid */
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:18px}
+    .service-card{
+      background:var(--card);border-radius:14px;padding:18px;box-shadow:0 8px 24px rgba(12,20,30,0.06);
+      transition:transform .28s ease, box-shadow .28s ease;
+    }
+    .service-card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(12,20,30,0.08)}
+    .service-card h3{color:var(--navy);margin:0 0 8px 0}
+    .service-card p{color:var(--muted);font-size:14px;margin:0 0 12px 0}
+    .service-media{display:flex;gap:12px;flex-wrap:wrap}
+    .thumb{
+      width:120px;height:80px;border-radius:8px;overflow:hidden;background:#eee;cursor:pointer;
+      display:flex;align-items:center;justify-content:center;color:#999;font-weight:700;
+      box-shadow:0 6px 18px rgba(12,20,30,0.06);
+    }
+
+    /* Full service sections */
+    .service-full{margin-top:28px;padding:22px;border-radius:14px;background:linear-gradient(180deg,#fff,#fbfdff);box-shadow:0 10px 30px rgba(12,20,30,0.04)}
+    .service-full .media-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .media-grid .media-item{border-radius:10px;overflow:hidden;background:#000;position:relative;min-height:140px}
+    .media-grid img, .media-grid video{width:100%;height:100%;object-fit:cover;display:block}
+
+    /* Process / Steps */
+    .steps{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-top:18px}
+    .step{background:var(--card);padding:18px;border-radius:12px;min-width:220px;box-shadow:0 8px 20px rgba(12,20,30,0.04)}
+    .step h4{margin:0 0 8px 0;color:var(--navy)}
+    .step p{margin:0;color:var(--muted);font-size:14px}
+
+    /* FAQ */
+    .faq{max-width:900px;margin:18px auto 0 auto;text-align:left}
+    .faq-item{background:var(--card);padding:14px;border-radius:10px;margin-bottom:10px;cursor:pointer;box-shadow:0 6px 18px rgba(12,20,30,0.04)}
+    .faq-item h5{margin:0;font-size:15px;color:var(--navy)}
+    .faq-item p{margin:8px 0 0 0;color:var(--muted);display:none}
+
+    /* Contact */
+    .contact-card{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-content:space-between;background:linear-gradient(90deg,#fff,#fbfdff);padding:22px;border-radius:14px;box-shadow:0 12px 30px rgba(12,20,30,0.06)}
+    .contact-left{min-width:260px}
+    .contact-right{min-width:260px;text-align:right}
+    .contact-right p{margin:6px 0;color:var(--muted)}
+
+    /* Footer */
+    footer{padding:28px 0;text-align:center;color:var(--muted);font-size:14px}
+
+    /* Floating contact (Call + WhatsApp) */
+    .floating-contact{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      z-index:1400;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      pointer-events:auto;
+      font-family:inherit;
+    }
+
+    .floating-buttons{
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
+
+    .float-btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:56px;
+      height:56px;
+      border-radius:50%;
+      text-decoration:none;
+      color:#fff;
+      box-shadow:0 10px 28px rgba(2,6,12,0.18);
+      transition:transform .12s ease, box-shadow .12s ease;
+      border: none;
+      background:#333;
+    }
+
+    .float-btn:active,
+    .float-btn:focus{ transform:translateY(1px); outline:3px solid rgba(15,23,32,0.12); }
+
+    .call-btn{
+      background: linear-gradient(180deg,#4b6cb7,#182848);
+    }
+
+    .wa-btn{
+      background: linear-gradient(180deg,#25D366,#128C7E);
+    }
+
+    /* Label shown on wider screens */
+    .floating-label{
+      display:none;
+      background:#fff;
+      color:var(--navy);
+      padding:8px 12px;
+      border-radius:999px;
+      font-weight:700;
+      box-shadow:0 8px 20px rgba(3,10,18,0.08);
+      align-items:center;
+    }
+
+    @media(min-width:900px){
+      .floating-label{ display:flex; margin-left:6px; }
+    }
+
+    /* Lightbox modal */
+    .lightbox{
+      position:fixed;inset:0;background:rgba(2,6,12,0.7);display:none;align-items:center;justify-content:center;z-index:1600;padding:20px;
+    }
+    .lightbox .frame{max-width:1100px;width:100%;max-height:90vh;border-radius:12px;overflow:hidden;background:#000;position:relative}
+    .lightbox .frame img, .lightbox .frame video{width:100%;height:100%;object-fit:contain;display:block}
+    .lightbox .close{
+      position:absolute;right:12px;top:12px;background:rgba(255,255,255,0.06);border:none;color:#fff;padding:8px 10px;border-radius:8px;cursor:pointer;font-weight:700;
+    }
+
+    /* Small screens tweaks */
+    @media(max-width:720px){
+      .hero{padding:48px 18px}
+      .hero-right{display:none}
+      .contact-right{text-align:left}
+      .translate-slot{width:140px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="wrap">
+      <div class="brand" aria-hidden="false">
+        <div class="logo" aria-hidden="true">PD</div>
+        <div>
+          <h1 id="site-title">Prabhu Drilling & Water Proofing</h1>
+          <p id="site-tag">Precision Drilling • Expert Waterproofing • 25+ Years</p>
+        </div>
+      </div>
+
+      <div class="header-controls" id="header-controls">
+        <!-- Translate slot: only one visible at a time, same place -->
+        <div class="translate-slot" aria-hidden="false">
+          <button id="translate-telugu" class="btn" aria-pressed="false" title="Translate to Telugu">EN⇆తెలుగు</button>
+          <button id="translate-english" class="btn hidden" aria-pressed="false" title="Translate to English">తెలుగు⇆EN</button>
+          
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" aria-label="Hero">
+      <div class="wrap">
+        <div class="hero-left">
+          <h2 id="hero-title">Trusted Drilling and Waterproofing Experts — 25+ Years of Perfection</h2>
+          <p id="hero-sub" class="lead">We combine experience, modern techniques and meticulous workmanship to protect buildings from water damage and structural issues. From grouting to rod anchoring, every job is handled with precision.</p>
+
+          <div class="cta-row">
+            <button class="cta-primary" id="quote-btn">Get a Free Quote</button>
+            <button class="cta-ghost" id="services-scroll">Explore Services</button>
+          </div>
+        </div>
+
+        <aside class="hero-right" aria-hidden="true">
+          <div class="hero-card">
+            <h4 id="hero-card-title">Quick Contact</h4>
+            <p id="hero-card-text">R. Srinivas Rao — 9666066871</p>
+            <p id="hero-card-text2" style="margin-top:10px;font-size:13px;color:rgba(255,255,255,0.9)">K. Appa Rao — 9949894420</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section aria-labelledby="about-title">
+      <div class="wrap">
+        <h2 id="about-title" class="section-title">Why Choose Prabhu Drilling</h2>
+        <p id="about-sub" class="section-sub">Over two decades of hands-on experience, a commitment to durable solutions, and a portfolio of successful projects across residential and commercial properties. We focus on long-term protection and customer satisfaction.</p>
+
+        <div class="steps" aria-hidden="false">
+          <div class="step">
+            <h4 id="expertise-title">Proven Expertise</h4>
+            <p id="expertise-text">25+ years delivering reliable, long-lasting waterproofing and structural repair solutions.</p>
+          </div>
+          <div class="step">
+            <h4 id="materials-title">Quality Materials</h4>
+            <p id="materials-text">We use industry-grade grouts, coatings and anchors to ensure durability and performance.</p>
+          </div>
+          <div class="step">
+            <h4 id="pricing-title">Transparent Pricing</h4>
+            <p id="pricing-text">Clear estimates and honest recommendations — no hidden costs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Summary -->
+    <section id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <h2 id="services-title" class="section-title">Our Services</h2>
+        <p id="services-sub" class="section-sub">Each service below links to a detailed gallery showing real photos and videos of our completed work. Click any thumbnail to view larger media.</p>
+
+        <div class="services-grid">
+          <!-- Grouting -->
+          <article class="service-card" id="card-grouting" data-service="grouting">
+            <h3 id="card-grouting-title">Grouting Works</h3>
+            <p id="card-grouting-desc">Pressure grouting, crack injection and structural sealing to restore strength and stop leaks.</p>
+            <!-- <div class="service-media">
+              <div class="thumb" data-type="image" data-src="grouting1.jpeg" tabindex="0">Img1</div>
+              <div class="thumb" data-type="image" data-src="images/grouting2.jpg" tabindex="0">Img 2</div>
+              <div class="thumb" data-type="video" data-src="videos/grouting.mp4" tabindex="0">Video</div>
+            </div> -->
+          </article>
+
+          <!-- Waterproof -->
+          <article class="service-card" id="card-waterproof" data-service="waterproof">
+            <h3 id="card-waterproof-title">Waterproof Coating</h3>
+            <p id="card-waterproof-desc">Advanced coatings for terraces, basements and roofs to prevent water ingress and protect finishes.</p>
+            <!-- <div class="service-media">
+              <div class="thumb" data-type="image" data-src="images/waterproof1.jpg" tabindex="0">Img 1</div>
+              <div class="thumb" data-type="image" data-src="images/waterproof2.jpg" tabindex="0">Img 2</div>
+              <div class="thumb" data-type="video" data-src="videos/waterproof.mp4" tabindex="0">Video</div>
+            </div> -->
+          </article>
+
+          <!-- Rod Anchoring -->
+          <article class="service-card" id="card-rod" data-service="rod">
+            <h3 id="card-rod-title">Rod Anchoring</h3>
+            <p id="card-rod-desc">Secure anchoring solutions for structural reinforcement and retrofitting.</p>
+            <!-- <div class="service-media">
+              <div class="thumb" data-type="image" data-src="images/rod1.jpg" tabindex="0">Img 1</div>
+              <div class="thumb" data-type="image" data-src="images/rod2.jpg" tabindex="0">Img 2</div>
+              <div class="thumb" data-type="video" data-src="videos/rod.mp4" tabindex="0">Video</div>
+            </div> -->
+          </article>
+
+          <!-- Wall Cracks -->
+          <article class="service-card" id="card-wall" data-service="wall">
+            <h3 id="card-wall-title">Wall Cracks Repair</h3>
+            <p id="card-wall-desc">Diagnosis and permanent repair of hairline to structural cracks with finishing that blends seamlessly.</p>
+            <!-- <div class="service-media">
+              <div class="thumb" data-type="image" data-src="images/wall1.jpg" tabindex="0">Img 1</div>
+              <div class="thumb" data-type="image" data-src="images/wall2.jpg" tabindex="0">Img 2</div>
+              <div class="thumb" data-type="video" data-src="videos/wall.mp4" tabindex="0">Video</div>
+            </div> -->
+          </article>
+
+          <!-- Chipping -->
+          <article class="service-card" id="card-chipping" data-service="chipping">
+            <h3 id="card-chipping-title">Chipping Work</h3>
+            <p id="card-chipping-desc">Controlled chipping and surface preparation for repairs and new installations.</p>
+            <!-- <div class="service-media">
+              <div class="thumb" data-type="image" data-src="images/chip1.jpg" tabindex="0">Img 1</div>
+              <div class="thumb" data-type="image" data-src="images/chip2.jpg" tabindex="0">Img 2</div>
+              <div class="thumb" data-type="video" data-src="videos/chip.mp4" tabindex="0">Video</div>
+            </div> -->
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section aria-labelledby="process-title">
+      <div class="wrap">
+        <h2 id="process-title" class="section-title">Our Process</h2>
+        <p id="process-sub" class="section-sub">A clear, step-by-step approach ensures predictable outcomes and satisfied customers.</p>
+
+        <div class="steps" role="list">
+          <div class="step" role="listitem">
+            <h4 id="step1-title">1. Site Inspection</h4>
+            <p id="step1-text">Detailed assessment to identify root causes and scope of work.</p>
+          </div>
+          <div class="step" role="listitem">
+            <h4 id="step2-title">2. Tailored Plan</h4>
+            <p id="step2-text">We propose the most effective solution with transparent pricing.</p>
+          </div>
+          <div class="step" role="listitem">
+            <h4 id="step3-title">3. Execution</h4>
+            <p id="step3-text">Skilled technicians use proven methods and quality materials.</p>
+          </div>
+          <div class="step" role="listitem">
+            <h4 id="step4-title">4. Quality Check</h4>
+            <p id="step4-text">Final inspection and client walkthrough to ensure satisfaction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section aria-labelledby="faq-title">
+      <div class="wrap">
+        <h2 id="faq-title" class="section-title">Frequently Asked Questions</h2>
+        <div class="faq" id="faq">
+          <div class="faq-item">
+            <h5>How long does a typical waterproofing job take?</h5>
+            <p>Duration depends on scope; small terraces can be completed in 1–2 days, larger jobs may take longer. We provide timelines with every estimate.</p>
+          </div>
+          <div class="faq-item">
+            <h5>Do you provide warranty?</h5>
+            <p>Yes. We offer workmanship warranty depending on the service and materials used. Details are provided in the job estimate.</p>
+          </div>
+          <div class="faq-item">
+            <h5>Can you work on occupied properties?</h5>
+            <p>Yes. We plan work to minimize disruption and maintain safety on site.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 id="contact-title" class="section-title">Contact Us</h2>
+        <p id="contact-sub" class="section-sub">Reach out for a free inspection and estimate. We respond quickly to calls and WhatsApp messages.</p>
+
+        <div class="contact-card" role="region" aria-label="Contact details">
+          <div class="contact-left">
+            <h3 id="contact-heading">Get in touch</h3>
+            <p id="contact-line1">R Srinivas Rao : <strong id="phone1">9666066871</strong></p>
+            <p id="contact-line2">K Appa Rao : <strong id="phone2">9949894420</strong></p>
+          </div>
+
+          <div class="contact-right">
+            <p id="contact-address">Address : KT Road, Kothapeta, Vijayawada - 520001</p>
+            <p style="margin-top:12px"><button class="btn" id="whatsapp-cta">Message on WhatsApp</button></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="wrap">
+        <p>© <span id="year"></span> Prabhu Drilling & Water Proofing — All rights reserved</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Floating contact (Call + WhatsApp) -->
+  <div class="floating-contact" aria-hidden="false">
+    <div class="floating-buttons" role="group" aria-label="Contact actions">
+      <!-- Call button -->
+      <a id="float-call" class="float-btn call-btn" href="tel:+919666066871" aria-label="Call Prabhu Drilling">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 01.95-.27c1.05.27 2.2.42 3.4.42a1 1 0 011 1V20a1 1 0 01-1 1C9.39 21 3 14.61 3 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.2.15 2.35.42 3.4.09.33.02.68-.27.95l-2.03 2.44z" fill="#fff"/>
+        </svg>
+      </a>
+
+      <!-- WhatsApp button -->
+      <a id="float-wa" class="float-btn wa-btn" href="https://wa.me/919666066871?text=I%20want%20to%20know%20more%20details%20and%20offer%20work" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.52 3.48A11.94 11.94 0 0012 0C5.373 0 .001 5.373.001 12c0 2.116.553 4.18 1.6 6.01L0 24l6.2-1.6A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.2-1.25-6.2-3.48-8.52z" fill="#fff"/>
+          <path d="M17.2 14.2c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.95 1.16-.18.2-.36.22-.66.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.36.45-.54.15-.18.2-.3.3-.5.1-.2 0-.37-.05-.52-.05-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.28.3-1.07 1.05-1.07 2.56 0 1.5 1.1 2.95 1.25 3.16.15.2 2.15 3.3 5.2 4.63 3.05 1.33 3.05.89 3.6.83.55-.06 1.75-.71 2-1.4.25-.69.25-1.28.18-1.4-.07-.12-.27-.2-.57-.35z" fill="#25D366"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="floating-label" aria-hidden="true">Contact Us</div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="frame" role="document">
+      <button class="close" id="lb-close" aria-label="Close">✕</button>
+      <div id="lb-content"></div>
+    </div>
+  </div>
+
+  <script>
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll to services
+    document.getElementById('services-scroll').addEventListener('click', () => {
+      document.getElementById('services').scrollIntoView({behavior:'smooth', block:'start'});
+    });
+
+    // Quote button opens WhatsApp prefilled message
+    document.getElementById('quote-btn').addEventListener('click', () => {
+      const phone = '919666066871';
+      const msg = encodeURIComponent('I want to know more details and offer work');
+      window.open('https://wa.me/' + phone + '?text=' + msg, '_blank');
+    });
+
+    // WhatsApp CTA in contact
+    document.getElementById('whatsapp-cta').addEventListener('click', () => {
+      document.getElementById('quote-btn').click();
+    });
+
+    // Lightbox functions
+    const lightbox = document.getElementById('lightbox');
+    const lbContent = document.getElementById('lb-content');
+    const lbClose = document.getElementById('lb-close');
+
+    function openLightbox(type, src){
+      lbContent.innerHTML = '';
+      if(type === 'image'){
+        const img = document.createElement('img');
+        img.src = src; img.alt = '';
+        lbContent.appendChild(img);
+      } else if(type === 'video'){
+        const vid = document.createElement('video');
+        vid.controls = true; vid.autoplay = true; vid.playsInline = true;
+        const srcEl = document.createElement('source');
+        srcEl.src = src; srcEl.type = 'video/mp4';
+        vid.appendChild(srcEl);
+        lbContent.appendChild(vid);
+      }
+      lightbox.style.display = 'flex';
+      lightbox.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(){
+      lightbox.style.display = 'none';
+      lightbox.setAttribute('aria-hidden','true');
+      lbContent.innerHTML = '';
+      document.body.style.overflow = '';
+    }
+
+    lbClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeLightbox(); });
+
+    // Attach click handlers to thumbs and media items
+    document.querySelectorAll('.thumb, .media-item').forEach(el => {
+      el.addEventListener('click', () => {
+        const type = el.dataset.type;
+        const src = el.dataset.src || (el.querySelector('img') && el.querySelector('img').src) || (el.querySelector('video') && el.querySelector('video source') && el.querySelector('video source').src);
+        if(src) openLightbox(type, src);
+      });
+      el.addEventListener('keydown', (e) => { if(e.key === 'Enter' || e.key === ' ') el.click(); });
+    });
+
+    // FAQ toggle
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const p = item.querySelector('p');
+        const isVisible = p.style.display === 'block';
+        document.querySelectorAll('.faq-item p').forEach(x => x.style.display = 'none');
+        p.style.display = isVisible ? 'none' : 'block';
+      });
+    });
+
+    // Translation: full-site English <-> Telugu
+    const teluguMap = {
+      "site-title":"ప్రభు డ్రిల్లింగ్ & వాటర్ ప్రూఫింగ్",
+      "site-tag":"ఖచ్చితమైన డ్రిల్లింగ్ • నిపుణుల వాటర్‌ప్రూఫింగ్ • 25+ సంవత్సరాలు",
+      "hero-title":"25+ సంవత్సరాల నమ్మకమైన అనుభవం — డ్రిల్లింగ్ మరియు వాటర్ ప్రూఫింగ్",
+      "hero-sub":"అనుభవం, ఆధునిక పద్ధతులు మరియు ఖచ్చితమైన పనితనంతో మేము భవనాలను నీటి నష్టాల నుండి రక్షిస్తాము. గ్రౌటింగ్ నుండి రాడ్ యాంకరింగ్ వరకు ప్రతి పని శ్రద్ధగా చేయబడుతుంది.",
+      "quote-btn":"ఉచిత అంచనా పొందండి",
+      "services-scroll":"సేవలను అన్వేషించండి",
+      "hero-card-title":"త్వరిత సంప్రదింపు",
+      "hero-card-text":"ఆర్. శ్రీనివాస్ రావు — 9666066871",
+      "hero-card-text2":"కె. అప్పారావు — 9949894420",
+      "about-title":"ఎందుకు ప్రభు డ్రిల్లింగ్",
+      "about-sub":"రెండు దశాబ్దాల అనుభవం, దీర్ఘకాలిక పరిష్కారాలపై దృష్టి మరియు విజయవంతమైన ప్రాజెక్టుల పోర్ట్‌ఫోలియో. మేము దీర్ఘకాలిక రక్షణ మరియు కస్టమర్ సంతృప్తిపై దృష్టి పెడతాము.",
+      "expertise-title":"నిరూపిత నైపుణ్యం",
+      "expertise-text":"నమ్మకమైన, దీర్ఘకాలిక వాటర్‌ప్రూఫింగ్ మరియు నిర్మాణ మరమ్మత్తుల పరిష్కారాలను 25+ సంవత్సరాలుగా అందిస్తున్నాం.",
+      "materials-title":"నాణ్యమైన పదార్థాలు",
+      "materials-text":"దీర్ఘకాలికత మరియు పనితనాన్ని నిర్ధారించడానికి పరిశ్రమ-గ్రేడ్ గ్రౌట్స్, కోటింగ్‌లు మరియు యాంకర్లు ఉపయోగిస్తాము.",
+      "pricing-title":"పారదర్శక ధరలు",
+      "pricing-text":"స్పష్టమైన అంచనాలు మరియు నిజాయితీగా సిఫార్సులు — దాచిన ఖర్చులు లేవు.",
+      "services-title":"మా సేవలు",
+      "services-sub":"ప్రతి సేవ క్రింద ఉన్న విస్తృత గ్యాలరీకి లింక్ చేయబడింది; పూర్తి ఫోటోలు మరియు వీడియోలు చూడండి.",
+      "card-grouting-title":"గ్రౌటింగ్ పనులు",
+      "card-grouting-desc":"పెరెషర్ గ్రౌటింగ్, క్రాక్ ఇంజెక్షన్ మరియు నిర్మాణ సీలింగ్ ద్వారా బలాన్ని పునరుద్ధరించి లీక్‌లను ఆపుతాము.",
+      "card-waterproof-title":"వాటర్‌ప్రూఫ్ కోటింగ్",
+      "card-waterproof-desc":"టెర్రస్, బేస్మెంట్ మరియు రూఫ్‌ల కోసం ఆధునిక కోటింగ్‌లు నీటి ప్రవేశాన్ని నిరోధిస్తాయి.",
+      "card-rod-title":"రాడ్ యాంకరింగ్",
+      "card-rod-desc":"నిర్మాణ బలోపేతం మరియు రెట్రోఫిటింగ్ కోసం భద్రతా యాంకరింగ్ పరిష్కారాలు.",
+      "card-wall-title":"గోడ పగుళ్లు మరమ్మత్తు",
+      "card-wall-desc":"హెయిర్‌లైన్ నుండి నిర్మాణ పగుళ్ల వరకు నిర్ధారణ మరియు శాశ్వత మరమ్మత్తు.",
+      "card-chipping-title":"చిప్పింగ్ పని",
+      "card-chipping-desc":"మరమ్మత్తుల మరియు కొత్త ఇన్‌స్టాలేషన్ల కోసం నియంత్రిత చిప్పింగ్ మరియు ఉపరితల సిద్ధత.",
+      
+
+
+      "process-title":"మా ప్రక్రియ",
+      "process-sub":"సూచనాత్మక, దశల వారీ విధానం నిర్దిష్ట ఫలితాలు మరియు సంతృప్తి కలిగిస్తుంది.",
+      "step1-title":"1. సైట్ పరిశీలన",
+      "step1-text":"మూల కారణాలు మరియు పనితీరు పరిధిని గుర్తించడానికి విపులమైన అంచనా.",
+      "step2-title":"2. అనుకూల ప్రణాళిక",
+      "step2-text":"సమర్థవంతమైన పరిష్కారాన్ని పారదర్శక ధరలతో ప్రతిపాదిస్తాము.",
+      "step3-title":"3. అమలు",
+      "step3-text":"నైపుణ్యంతో కూడిన టెక్నీషియన్లు నిరూపిత పద్ధతులు మరియు నాణ్యమైన పదార్థాలు ఉపయోగిస్తారు.",
+      "step4-title":"4. నాణ్యత తనిఖీ",
+      "step4-text":"చివరి తనిఖీ మరియు కస్టమర్ వాక్‌త్రూ ద్వారా సంతృప్తి నిర్ధారించబడుతుంది.",
+      "faq-title":"సాధారణంగా అడిగే ప్రశ్నలు",
+      "faq1-q":"సాధారణంగా వాటర్‌ప్రూఫింగ్ పని ఎంత సమయం తీసుకుంటుంది?",
+      "faq1-a":"పరిధిపై ఆధారపడి ఉంటుంది; చిన్న టెర్రస్‌లు 1–2 రోజుల్లో పూర్తి చేయబడవచ్చు, పెద్ద పనులు ఎక్కువ సమయం తీసుకోవచ్చు. ప్రతి అంచనాతో టైమ్‌లైన్ ఇవ్వబడుతుంది.",
+      "faq2-q":"మీరు వారంటీ ఇస్తారా?",
+      "faq2-a":"అవును. సేవ మరియు ఉపయోగించిన పదార్థాలపై ఆధారపడి వర్క్‌మెన్షిప్ వారంటీ అందిస్తాము. వివరాలు అంచనాలో ఇవ్వబడతాయి.",
+      "faq3-q":"మీరు నివాస ప్రాపర్టీలపై పని చేయగలరా?",
+      "faq3-a":"అవును. పని అంతరాయం తగ్గించేలా మరియు సురక్షితంగా ప్లాన్ చేయబడుతుంది.",
+      "contact-title":"మమ్మల్ని సంప్రదించండి",
+      "contact-sub":"ఉచిత పరిశీలన మరియు అంచనాకు సంప్రదించండి. మేము కాల్‌లు మరియు వాట్సాప్ సందేశాలకు త్వరగా స్పందిస్తాము.",
+      "contact-line1":"ఆర్. శ్రీనివాస్ రావు : 9666066871",
+      "contact-line2":"కె. అప్పారావు : 9949894420",
+      "contact-address":"Address : KT Road, Kothapeta, Vijayawada - 520001",
+      "whatsapp-label":"వాట్సాప్‌లో సందేశం పంపండి",
+      "footer":"© Prabhu Drilling & Water Proofing — అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి"
+    };
+
+    // Collect all elements that need translation by id
+    const translatableIds = [
+      "site-title","site-tag","hero-title","hero-sub","quote-btn","services-scroll","hero-card-title","hero-card-text","hero-card-text2",
+      "about-title","about-sub","expertise-title","expertise-text","materials-title","materials-text","pricing-title","pricing-text",
+      "services-title","services-sub",
+      "card-grouting-title","card-grouting-desc","card-waterproof-title","card-waterproof-desc",
+      "card-rod-title","card-rod-desc","card-wall-title","card-wall-desc","card-chipping-title","card-chipping-desc",
+      
+
+      
+      "process-title","process-sub","step1-title","step1-text","step2-title","step2-text","step3-title","step3-text","step4-title","step4-text",
+      "faq-title","contact-title","contact-sub","contact-line1","contact-line2","contact-address","whatsapp-cta"
+    ];
+
+    // Save original English text
+    const originalText = {};
+    translatableIds.forEach(id => {
+      const el = document.getElementById(id);
+      if(el) originalText[id] = el.textContent.trim();
+    });
+
+    // Also handle FAQ Q/A elements (they are not given ids above)
+    const faqMap = [
+      {q:0, qEl: document.querySelectorAll('.faq-item h5')[0], aEl: document.querySelectorAll('.faq-item p')[0], qId:'faq1-q', aId:'faq1-a'},
+      {q:1, qEl: document.querySelectorAll('.faq-item h5')[1], aEl: document.querySelectorAll('.faq-item p')[1], qId:'faq2-q', aId:'faq2-a'},
+      {q:2, qEl: document.querySelectorAll('.faq-item h5')[2], aEl: document.querySelectorAll('.faq-item p')[2], qId:'faq3-q', aId:'faq3-a'}
+    ];
+    // Save original FAQ text
+    faqMap.forEach(item => {
+      if(item.qEl) originalText[item.qId] = item.qEl.textContent.trim();
+      if(item.aEl) originalText[item.aId] = item.aEl.textContent.trim();
+    });
+
+    // Translate button elements
+    const btnTelugu = document.getElementById('translate-telugu');
+    const btnEnglish = document.getElementById('translate-english');
+
+    // Ensure only Translate to Telugu and Call Now visible by default
+    btnTelugu.classList.remove('hidden');
+    btnEnglish.classList.add('hidden');
+
+    // Function to apply Telugu translations
+    function applyTelugu(){
+      translatableIds.forEach(id => {
+        const el = document.getElementById(id);
+        if(el && teluguMap[id]) el.textContent = teluguMap[id];
+      });
+      // FAQ translations
+      faqMap.forEach(item => {
+        if(item.qEl && teluguMap[item.qId]) item.qEl.textContent = teluguMap[item.qId];
+        if(item.aEl && teluguMap[item.aId]) item.aEl.textContent = teluguMap[item.aId];
+      });
+
+      // Translate WhatsApp label and button text
+      const whatsappLabel = document.querySelector('.whatsapp-float .label');
+      if(whatsappLabel && teluguMap['whatsapp-label']) whatsappLabel.textContent = teluguMap['whatsapp-label'];
+      const whatsappCta = document.getElementById('whatsapp-cta');
+      if(whatsappCta && teluguMap['whatsapp-label']) whatsappCta.textContent = teluguMap['whatsapp-label'];
+
+      // Swap buttons: hide Telugu button, show English button in same slot
+      btnTelugu.classList.add('hidden');
+      btnEnglish.classList.remove('hidden');
+      // Keep same visual place: both are in same container
+    }
+
+    // Function to restore English
+    function applyEnglish(){
+      translatableIds.forEach(id => {
+        const el = document.getElementById(id);
+        if(el && originalText[id]) el.textContent = originalText[id];
+      });
+      // FAQ restore
+      faqMap.forEach(item => {
+        if(item.qEl && originalText[item.qId]) item.qEl.textContent = originalText[item.qId];
+        if(item.aEl && originalText[item.aId]) item.aEl.textContent = originalText[item.aId];
+      });
+
+      // Restore WhatsApp label
+      const whatsappLabel = document.querySelector('.whatsapp-float .label');
+      if(whatsappLabel) whatsappLabel.textContent = 'Chat on WhatsApp';
+      const whatsappCta = document.getElementById('whatsapp-cta');
+      if(whatsappCta) whatsappCta.textContent = 'Message on WhatsApp';
+
+      // Swap buttons back
+      btnTelugu.classList.remove('hidden');
+      btnEnglish.classList.add('hidden');
+    }
+
+    // Click handlers for translate buttons
+    btnTelugu.addEventListener('click', () => {
+      applyTelugu();
+      // ensure focus remains on same place visually
+      btnEnglish.focus();
+    });
+    btnEnglish.addEventListener('click', () => {
+      applyEnglish();
+      btnTelugu.focus();
+    });
+
+    // Make translate buttons accessible via keyboard
+    btnTelugu.addEventListener('keydown', (e) => { if(e.key === 'Enter' || e.key === ' ') btnTelugu.click(); });
+    btnEnglish.addEventListener('keydown', (e) => { if(e.key === 'Enter' || e.key === ' ') btnEnglish.click(); });
+
+    // Floating contact setup (keeps links in sync with contact section)
+    (function(){
+      const phonePrimary = '919666066871'; // international format without '+'
+      const waMessage = 'I want to know more details and offer work';
+      const telHref = 'tel:+' + phonePrimary;
+      const waHref = 'https://wa.me/' + phonePrimary + '?text=' + encodeURIComponent(waMessage);
+
+      const floatCall = document.getElementById('float-call');
+      const floatWa = document.getElementById('float-wa');
+
+      if(floatCall) floatCall.setAttribute('href', telHref);
+      if(floatWa) {
+        floatWa.setAttribute('href', waHref);
+        floatWa.setAttribute('target', '_blank');
+        floatWa.setAttribute('rel', 'noopener noreferrer');
+      }
+
+      // Make buttons keyboard-friendly (Enter/Space)
+      [floatCall, floatWa].forEach(el => {
+        if(!el) return;
+        el.addEventListener('keydown', (e) => {
+          if(e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            el.click();
+          }
+        });
+      });
+
+      // Optional: update label text from translation map if you use translations
+      const floatingLabel = document.querySelector('.floating-label');
+      if(floatingLabel){
+        // If you later translate, set floatingLabel.textContent accordingly
+        // floatingLabel.textContent = 'Chat on WhatsApp'; // default
+      }
+    })();
+  </script>
+  <!-- Promotional modal for first visit -->
+<div id="promo-modal-overlay" class="promo-modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="promo-title">
+  <div class="promo-modal" role="document">
+    <button id="promo-close" class="promo-close" aria-label="Close promotional dialog">✕</button>
+
+    <div class="promo-body">
+      <div class="promo-media">
+        <!-- <img id="promo-image" src="Visiting-card.jpeg" alt="Prabhu Drilling promotional ad" /> -->
+        <img id="promo-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwBCM3XethFsT2nsZ5H0tNLqFvFXwGVTDdIZxjngPu7Y_87FJBhK4zdgm02XHxIgjdgQ8ZKB1-H8rkCumJ1oItk3jnEFp9DJ_0HMLDaLPMNR_v88f2H_2Wgpw1UcXL8ABTFbHLDS4XzU2AP_kK5gY-oRV2L-N9L6jKHxaepDrSuqfpM02Q4RLMKevxaxA/s320/Visiting-card.jpeg" alt="Prabhu Drilling promotional ad" />
+
+      </div>
+
+      <div class="promo-content">
+        <h2 id="promo-title">Special Offer from Prabhu Drilling</h2>
+        <p class="promo-text">Free inspection and estimate for a limited time. Click below to call or message us on WhatsApp.</p>
+
+        <div class="promo-actions">
+          <a id="promo-call" class="promo-btn promo-call" href="tel:+919666066871" aria-label="Call Prabhu Drilling">Call Now</a>
+          <a id="promo-wa" class="promo-btn promo-wa" href="https://wa.me/919666066871?text=I%20want%20to%20know%20more%20details%20and%20offer%20work" target="_blank" rel="noopener noreferrer" aria-label="Message on WhatsApp">Message on WhatsApp</a>
+          <button id="promo-view" class="promo-btn promo-view" aria-label="View promotional image">View Promo</button>
+        </div>
+
+        <label class="promo-checkbox">
+          <input type="checkbox" id="promo-dontshow" /> <span>Do not show again</span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Promo modal styles - scoped to avoid conflicts */
+  .promo-modal-overlay{
+    position:fixed;inset:0;display:none;align-items:center;justify-content:center;
+    background:rgba(2,6,12,0.6);z-index:2000;padding:20px;
+  }
+  .promo-modal{
+    width:100%;max-width:980px;background:#fff;border-radius:12px;overflow:hidden;
+    box-shadow:0 20px 60px rgba(2,6,12,0.35);position:relative;
+  }
+  .promo-close{
+    position:absolute;right:12px;top:12px;background:transparent;border:none;font-size:20px;cursor:pointer;padding:8px;
+  }
+  .promo-body{display:flex;flex-wrap:wrap;gap:18px;padding:20px;align-items:center}
+  .promo-media{flex:1 1 320px;min-width:260px;max-width:420px}
+  .promo-media img{width:100%;height:auto;display:block;border-radius:8px;cursor:pointer}
+  .promo-content{flex:1 1 320px;min-width:260px;padding:6px 12px}
+  #promo-title{margin:0 0 8px 0;color:var(--navy);font-size:20px}
+  .promo-text{margin:0 0 14px;color:var(--muted)}
+  .promo-actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  .promo-btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:8px;text-decoration:none;color:#fff;font-weight:700;border:none;cursor:pointer}
+  .promo-call{background:linear-gradient(180deg,#4b6cb7,#182848)}
+  .promo-wa{background:linear-gradient(180deg,#25D366,#128C7E)}
+  .promo-view{background:#f3f4f6;color:var(--navy);border:1px solid rgba(12,20,30,0.06)}
+  .promo-checkbox{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:14px}
+  @media(max-width:720px){
+    .promo-body{flex-direction:column}
+    .promo-media{max-width:100%}
+  }
+</style>
+
+<script>
+  (function(){
+    const OVERLAY_ID = 'promo-modal-overlay';
+    const DONT_SHOW_KEY = 'prabhu_promo_dont_show';
+    const overlay = document.getElementById(OVERLAY_ID);
+    const closeBtn = document.getElementById('promo-close');
+    const dontShow = document.getElementById('promo-dontshow');
+    const viewBtn = document.getElementById('promo-view');
+    const promoImage = document.getElementById('promo-image');
+
+    // Do not show if user previously opted out
+    try {
+      const optedOut = localStorage.getItem(DONT_SHOW_KEY);
+      if(optedOut === 'true') return;
+    } catch(e){ /* localStorage may be unavailable, continue to show */ }
+
+    // Show modal after DOM is ready
+    function showModal(){
+      overlay.style.display = 'flex';
+      overlay.setAttribute('aria-hidden','false');
+      // trap focus on modal for accessibility
+      const focusable = overlay.querySelectorAll('a,button,input');
+      if(focusable.length) focusable[0].focus();
+      document.body.style.overflow = 'hidden';
+    }
+
+    function hideModal(){
+      overlay.style.display = 'none';
+      overlay.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+      // store preference if checked
+      try {
+        if(dontShow.checked) localStorage.setItem(DONT_SHOW_KEY, 'true');
+      } catch(e){}
+    }
+
+    // Open lightbox using existing openLightbox if available
+    function openPromoLightbox(){
+      const src = promoImage.getAttribute('data-src') || promoImage.src;
+      if(typeof openLightbox === 'function'){
+        openLightbox('image', src);
+        hideModal();
+      } else {
+        // fallback: open image in new tab
+        window.open(src, '_blank');
+        hideModal();
+      }
+    }
+
+    // Event listeners
+    closeBtn.addEventListener('click', hideModal);
+    overlay.addEventListener('click', function(e){
+      if(e.target === overlay) hideModal();
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && overlay.style.display === 'flex') hideModal();
+    });
+
+    viewBtn.addEventListener('click', openPromoLightbox);
+    promoImage.addEventListener('click', openPromoLightbox);
+
+    // Make call and WhatsApp buttons keyboard friendly
+    ['promo-call','promo-wa'].forEach(id => {
+      const el = document.getElementById(id);
+      if(!el) return;
+      el.addEventListener('keydown', function(e){
+        if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); }
+      });
+    });
+
+    // Delay showing slightly so page content loads first
+    window.addEventListener('load', function(){
+      // small delay to avoid jarring on very slow pages
+      setTimeout(showModal, 450);
+    });
+  })();
+</script>
+</body>
+</html>
